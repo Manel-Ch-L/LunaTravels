@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Agency travel</title>
+  </head>
+  <body class="bg-gray-350">
+    <!-- Hero section -->
+    <!-- h-screen == 100vh -->
+    <!-- relative absolute -->
+    <div
+      style="
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+          url(./welcome.jpg);
+      "
+      class="h-screen bg-top bg-cover rounded-3xl"
+    >
+      <nav
+        class="flex justify-between items-center fixed top-6 left-10 right-10"
+      >
+        <h1 class="text-3xl font-bold">LunaTravels</h1>
+        <ul class="flex gap-15 font-semibold hidden lg:flex">
+          <li class="hover:text-sky-500 cursor-pointer">Home</li>
+          <li class="hover:text-sky-500 cursor-pointer">Services</li>
+          <li class="hover:text-sky-500 cursor-pointer">Destination</li>
+        </ul>
+        <button
+          class="border-2 font-semibold hover:text-sky-500 hover:border-sky-800 cursor-pointer lg:py-1 px-8 rounded-full"
+        >
+          contact
+        </button>
+      </nav>
+      <div
+        class="flex flex-col justify-center items-center h-full text-white gap-5"
+      >
+        <h1 class="font-['Dancing_Script'] text-2xl lg:text-8xl font-bold">
+          Choose Your Next Destination
+        </h1>
+        <p class="text-center lg:text-center">
+          let us make your next adventure easy and exciting and with
+          unforgettable memories
+        </p>
+        <div class="relative">
+          <input
+            type="search"
+            class="bg-white text-black outline-none px-6 py-3 rounded-full w-70 lg:w-81"
+            placeholder=" search your destination..."
+          />
+          <i
+            class="fa-solid fa-arrow-right-long bg-sky-500 p-2 rounded-full absolute right-1 top-1.75"
+          ></i>
+          <i
+            class="fa-solid fa-location-dot absolute right-75.5 top-3 text-2xl text-black"
+          ></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- destinations -->
+    <div class="p-10 flex flex-col gap-23 relative">
+      <img
+        src="./airplane.jpg"
+        alt=""
+        class="w-40 rounded-full right-272 absolute top-10"
+      />
+      <div class="flex flex-col text-center gap-2">
+        <h1 class="font-bold text-4xl">Our Destinations</h1>
+        <p>
+          Discover our destinations where unforgettable experiences, relaxation,
+          and adventure await.
+        </p>
+      </div>
+      <!-- COUNTRIES -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <!-- GREECE -->
+        <div
+          class="flex flex-col gap-5 border-none rounded-2xl pb-5 shadow-2xl"
+        >
+          <div>
+            <img src="./Greece.webp" alt="GREECE" class="rounded-t-2xl" />
+          </div>
+          <div class="pl-5">
+            <h2 class="font-semibold text-xl">Greece Tour Package</h2>
+            <h3 class="font-bold">
+              980$ <span style="color: grey">/person</span>
+            </h3>
+          </div>
+          <div class="flex justify-between pr-2 pl-5">
+            <p><i class="fa-regular fa-clock"></i> 7 Days</p>
+            <button
+              class="bg-white border px-2 py-1 rounded-full cursor-pointer hover:text-sky-500"
+            >
+              Book now <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-5 border-none rounded-2xl pb-5 shadow-2xl"
+        >
+          <!-- ITALY -->
+          <div><img src="./italy.jpg" alt="ITALY" class="rounded-2xl" /></div>
+          <div class="pl-5">
+            <h2 class="font-semibold text-xl">Italy Tour Package</h2>
+            <h3 class="font-bold">
+              890$<span style="color: grey">/person</span>
+            </h3>
+          </div>
+          <div class="flex justify-between pr-2 pl-5">
+            <p><i class="fa-regular fa-clock"></i> 7 Days</p>
+            <button
+              class="bg-white border px-2 py-1 rounded-full cursor-pointer hover:text-sky-500"
+            >
+              Book now <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+        <!-- NEWZEALAND -->
+        <div
+          class="flex flex-col gap-5 border-none rounded-2xl pb-5 shadow-2xl"
+        >
+          <div>
+            <img src="./newzealand.jpg" alt="NEWZEALAND" class="rounded-2xl" />
+          </div>
+          <div class="pl-5">
+            <h2 class="font-semibold text-xl">NewZealand</h2>
+            <h3 class="font-bold">
+              670$<span style="color: grey">/person</span>
+            </h3>
+          </div>
+          <div class="flex justify-between pr-2 pl-5">
+            <p><i class="fa-regular fa-clock"></i> 7 Days</p>
+            <button
+              class="bg-white border px-2 py-1 rounded-full cursor-pointer hover:text-sky-500"
+            >
+              Book now <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+        <!-- SWITZERLAND -->
+        <div
+          class="flex flex-col gap-5 border-none rounded-2xl pb-5 shadow-2xl"
+        >
+          <div>
+            <img
+              src="./switzerland.jpg"
+              alt="SWITZERLAND"
+              class="rounded-2xl"
+            />
+          </div>
+          <div class="pl-5">
+            <h2 class="font-semibold text-xl">Switzerland</h2>
+            <h3 class="font-bold">
+              980$<span style="color: grey">/person</span>
+            </h3>
+          </div>
+          <div class="flex justify-between pr-2 pl-5">
+            <p><i class="fa-regular fa-clock"></i> 7 Days</p>
+            <button
+              class="bg-white border px-2 py-1 rounded-full cursor-pointer hover:text-sky-500"
+            >
+              Book now <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div class="p-10 flex flex-col gap-23">
+      <div class="flex flex-col text-center gap-3">
+        <h1 class="font-bold text-4xl">Our Services</h1>
+        <p class="text-black/65">
+          Explore our services and let us help you discover your next dream
+          destination. ✈️🌍
+        </p>
+      </div>
+      <!-- FLAG -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div
+          class="flex flex-col justify-center items-center text-center gap-4 rounded-2xl p-5 shadow-2xl"
+        >
+          <div>
+            <i class="fa-regular fa-flag w-400 text-sky-800 text-8xl"></i>
+          </div>
+          <div>
+            <h1 class="text-2xl font-semibold">Tailored Trip Planning</h1>
+          </div>
+          <div>
+            <p class="text-black/65">
+              Plan your perfect journey with personalized travel plans designed
+              around your needs, preferences, and budget for a smooth and
+              enjoyable experience.
+            </p>
+          </div>
+        </div>
+        <!-- PLANE -->
+        <div
+          class="flex flex-col justify-center items-center text-center gap-4 rounded-2xl p-5 shadow-2xl"
+        >
+          <div>
+            <i class="fa-solid fa-plane-up text-sky-800 text-8xl"></i>
+          </div>
+          <div>
+            <h1 class="text-2xl font-semibold">Flight Booking</h1>
+          </div>
+          <div>
+            <p class="text-black/65">
+              Book your flights with ease and find the best options that match
+              your schedule, budget, and travel preferences for a comfortable
+              journey.
+            </p>
+          </div>
+        </div>
+        <!-- BOOK -->
+        <div
+          class="flex flex-col justify-center items-center text-center gap-4 rounded-2xl p-5 shadow-2xl"
+        >
+          <div>
+            <i class="fa-solid fa-book-open text-sky-800 text-8xl"></i>
+          </div>
+          <div>
+            <h1 class="text-2xl font-semibold">Guided Tours & Activities</h1>
+          </div>
+          <div>
+            <p class="text-black/65">
+              Discover amazing destinations through carefully selected tours and
+              activities, giving you the chance to explore, experience, and
+              create lasting memories.
+            </p>
+          </div>
+        </div>
+        <!-- HEADPHONES -->
+        <div
+          class="flex flex-col justify-center items-center text-center gap-4 rounded-2xl p-5 shadow-2xl"
+        >
+          <div>
+            <i class="fa-solid fa-headset text-sky-800 text-8xl"></i>
+          </div>
+          <div>
+            <h1 class="text-2xl font-semibold">24/7 Travel Support</h1>
+          </div>
+          <p class="text-black/65">
+            Travel with confidence knowing our team is available around the
+            clock to assist you with any questions or needs throughout your
+            journey.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="bg-gray-600 p-10 text-white">
+      <p class="text-center font-semibold">
+        <i class="fa-regular fa-copyright"></i>From planning to exploring, we're
+        here to make every journey easier, smoother, and more enjoyable. All
+        Rights Reserved To <span class="font-bold">LunaTravels AGENCY</span>
+      </p>
+    </div>
+  </body>
+</html>
